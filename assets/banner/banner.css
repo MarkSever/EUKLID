@@ -1,0 +1,129 @@
+.banner {
+  margin-top: 49.5px;
+}
+
+.banner__container {
+  border-radius: 32px;
+  height: 620px;
+  background-size: contain;
+  position: relative;
+}
+
+.slide-1 {
+  background-image: url(./banner-bg-1.png);
+  background-size: contain;
+}
+
+.slide-2 {
+  background-image: url(./banner-bg-2.png);
+  background-size: contain;
+}
+
+.slide-3 {
+  background-image: url(./banner-bg-3.png);
+  background-size: contain;
+}
+
+.banner__title {
+  position: absolute;
+  left: 80px;
+  top: 101px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--color-white);
+  width: 837px;
+  z-index: 3;
+}
+
+.banner__text {
+  margin: 0;
+  position: absolute;
+  left: 80px;
+  top: 294.5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: var(--color-white);
+  width: 790px;
+  height: 58px;
+  letter-spacing: -0.31px;
+  z-index: 3;
+}
+
+.banner__btn {
+  position: absolute;
+  left: 80px;
+  top: 442.5px;
+  width: 280px;
+  height: 77.5px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28.04px;
+  color: var(--color-white);
+  border-radius: 16px;
+  background: var(--color-orange);
+  letter-spacing: -0.2px;
+  z-index: 3;
+}
+
+.swiper__navigation {
+  position: absolute;
+  top: 575px;
+  left: 843px;
+  width: 85px;
+  height: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 843px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+    margin: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-light-grey);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-white);
+}
+
+.navigation__bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--color-light-grey);
+}
+
+.navigation__bullet.active {
+  background: var(--color-white);
+}
+
+/* интерактивные состояния */
+
+.banner__btn:hover {
+  background: var(--color-orange-second);
+  border-radius: 16px;
+}
+
+.banner__btn:focus {
+  background: var(--color-orange-second);
+  border-radius: 16px;
+  outline: none;
+}
+
+.banner__btn:active {
+  background: var(--color-orange-third);
+}
